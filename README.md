@@ -1,1 +1,1 @@
-# simathsolvers.github.io
+# scimathsolvers.github.io
