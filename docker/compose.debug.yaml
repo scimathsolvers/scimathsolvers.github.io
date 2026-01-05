@@ -1,6 +1,0 @@
-services:
-  scimathsolversgithub:
-    image: scimathsolversgithub
-    build:
-      context: .
-      dockerfile: ./Dockerfile

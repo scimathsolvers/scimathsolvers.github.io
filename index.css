@@ -1,8 +1,28 @@
+/*  font part */
+@font-face {
+    font-family: 'CasMono';
+    src: 
+        url('./fonts/static/CascadiaMono-Bold.ttf') format('ttf'),
+        url('./fonts/static/CascadiaMono-BoldItalic.ttf') format('ttf'),
+        url('./fonts/static/CascadiaMono-Italic.ttf') format('ttf'),
+        url('./fonts/static/CascadiaMono-Regular.ttf') format('ttf'),
+        url('./fonts/static/CascadiaMono-semiBold.ttf') format('ttf'),
+        url('./fonts/static/CascadiaMono-SemiBoldItalic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*navbar*/
 #navbar {
-    background-color: #333;
+    background-color: #1c1b1b;
     overflow: hidden;
     top:0;
+    left: 0;
     width: 100%;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
+    font-family: ''
+}
+#navheader {
+    color: #776d6d;
+    font-family: 'Cascadia Mono Bold', 'CasMono';
 }
