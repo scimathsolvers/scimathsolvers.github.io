@@ -1,7 +1,7 @@
 /*  font part */
 @font-face {
     font-family: 'CasMono';
-    src: 
+    src:
         url('./fonts/static/CascadiaMono-Bold.ttf') format('truetype'),
         url('./fonts/static/CascadiaMono-BoldItalic.ttf') format('truetype'),
         url('./fonts/static/CascadiaMono-Italic.ttf') format('truetype'),
@@ -11,28 +11,38 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /*navbar*/
 .navbar {
     background-color: #1c1b1b;
     overflow: hidden;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     position: fixed;
     z-index: 100;
     font-family: CasMono, sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 5px;
 }
+
 #navheader {
     color: #776d6d;
     font-family: CasMono, sans-serif;
 }
+
 .navbutton {
-    left: 100%;
+    left: 0%;
     background-color: #1c1b1b;
     color: #504a4a;
     font-family: CasMono, sans-serif;
     border-color: #2b2727;
     top: 0;
+    padding: 14px 16px;
+    margin: 0;
+}
+
+.navbutton:first-of-type {
+    margin-left: auto;
 }
