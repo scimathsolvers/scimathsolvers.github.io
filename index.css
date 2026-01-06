@@ -2,17 +2,17 @@
 @font-face {
     font-family: 'CasMono';
     src: 
-        url('./fonts/static/CascadiaMono-Bold.ttf') format('ttf'),
-        url('./fonts/static/CascadiaMono-BoldItalic.ttf') format('ttf'),
-        url('./fonts/static/CascadiaMono-Italic.ttf') format('ttf'),
-        url('./fonts/static/CascadiaMono-Regular.ttf') format('ttf'),
-        url('./fonts/static/CascadiaMono-semiBold.ttf') format('ttf'),
-        url('./fonts/static/CascadiaMono-SemiBoldItalic.ttf') format('ttf');
+        url('./fonts/static/CascadiaMono-Bold.ttf') format('truetype'),
+        url('./fonts/static/CascadiaMono-BoldItalic.ttf') format('truetype'),
+        url('./fonts/static/CascadiaMono-Italic.ttf') format('truetype'),
+        url('./fonts/static/CascadiaMono-Regular.ttf') format('truetype'),
+        url('./fonts/static/CascadiaMono-semiBold.ttf') format('truetype'),
+        url('./fonts/static/CascadiaMono-SemiBoldItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 /*navbar*/
-#navbar {
+.navbar {
     background-color: #1c1b1b;
     overflow: hidden;
     top:0;
@@ -20,9 +20,19 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-    font-family: ''
+    font-family: CasMono, sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 #navheader {
     color: #776d6d;
-    font-family: 'Cascadia Mono Bold', 'CasMono';
+    font-family: CasMono, sans-serif;
+}
+.navbutton {
+    left: 100%;
+    background-color: #1c1b1b;
+    color: #504a4a;
+    font-family: CasMono, sans-serif;
+    border-color: #2b2727;
+    top: 0;
 }

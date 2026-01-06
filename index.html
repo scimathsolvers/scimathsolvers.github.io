@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="title" content="Home">
         <link rel="stylesheet" href="index.css">
         <link rel="icon" href = "media/favicon.ico">
         <script src="./mini-coi-fd.js"></script>
@@ -9,14 +10,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript">
-
-            const desc = "Home";
+            const desc = document.querySelector('meta[name="title"]').getAttribute("content");
             document.title = `SciMath-Solvers || ${desc}`;
         </script>
     </head>
-    <body>
-        <section id="navbar">
-            <h1 id ="navheader">SciMath-Solvers</h1>
-        </section>
+    <body id="Home">
+        <div class="navbar">
+            <script type="text/javascript">
+                    function nav(id) {
+                        if (id === 'top') {
+                            instance.scroll([0, 0], 500);
+                        } else if(id != 'doc' && id != '') {
+                            instance.scroll({
+                                el: document.getElementById(id),
+                                scroll: {
+                                    y: "begin",
+                                    x: "never"
+                                }
+                            }, 500);
+                        } else if (id == 'doc'){
+                            window.open("https://scimathsolvers.github.io/doc/","_self");
+                        }
+                    }
+            </script>
+            <h2 id="navheader">SciMath-Solvers</h2>
+            <button class="navbutton" onclick="nav('Home')">Home</button>
+            <button class="navbutton" onclick="nav('Download')">Download</button>
+            <button class="navbutton" onclick="nav('doc')">Documentation</button>
+        </div>
+
+        <section id="Download"></section>
     </body>
 </html>
